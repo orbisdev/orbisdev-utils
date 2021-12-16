@@ -18,7 +18,7 @@ $(OutPath)/$(TargetFile).a: $(ObjectFiles)
 	$(archive)
 
 install:
-	@cp $(OutPath)/$(TargetFile).a $(ORBISDEV)/usr/lib
-	@cp include/user_mem.h $(ORBISDEV)/usr/include
+	@cp $(OutPath)/$(TargetFile).a $(DESTDIR)$(ORBISDEV)/usr/lib
+	@cp include/user_mem.h $(DESTDIR)$(ORBISDEV)/usr/include
 	@echo "$(TargetFile) Installed!"
 
